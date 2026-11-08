@@ -656,9 +656,13 @@ a {
     font-size: 28px;
   }
  
-  .navActions {
-    gap: 24px;
-  }
+ .navActions {
+  position: static;
+  left: auto;
+  transform: none;
+  margin-left: 0;
+  gap: 24px;
+}
  
   .languageButton,
   .themeButton {
@@ -915,12 +919,16 @@ a {
     font-size: 24px;
   }
  
-  .navActions {
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px 12px;
-  }
+ .navActions {
+  position: static;
+  left: auto;
+  transform: none;
+  margin-left: 0;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+}
  
   .languageButton,
   .themeButton {
