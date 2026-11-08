@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "JAVASCRIPT",
+    "icon": "javascript.png",
+    "color": "#F7DF1E"
+  },
+  {
+    "id": 2,
+    "name": "NODE",
+    "icon": "node.png",
+    "color": "#111111"
+  },
+  {
+    "id": 3,
+    "name": "REACT",
+    "icon": "react.png",
+    "color": "#20232A"
+  },
+  {
+    "id": 4,
+    "name": "VS CODE",
+    "icon": "vscode.png",
+    "color": "#087ACB"
+  },
+  {
+    "id": 5,
+    "name": "REDUX",
+    "icon": "redux.png",
+    "color": "#764ABC"
+  },
+  {
+    "id": 6,
+    "name": "FIGMA",
+    "icon": "figma.png",
+    "color": "#111111"
+  }
+]

@@ -1,0 +1,59 @@
+
+{
+  "information": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Birth Date",
+        "tr": "Doğum Tarihi"
+      },
+      "description": {
+        "en": "March 31, 1997",
+        "tr": "31 Mart 1997"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Location",
+        "tr": "Yaşadığı Yer"
+      },
+      "description": {
+        "en": "Istanbul, Turkey",
+        "tr": "İstanbul, Türkiye"
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Education",
+        "tr": "Eğitim"
+      },
+      "description": {
+        "en": "Istanbul Medipol University - Architecture (Double Major, 2021)",
+        "tr": "İstanbul Medipol Üniversitesi - Mimarlık (Çift Anadal, 2021)"
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "en": "Preferred Roles",
+        "tr": "İlgilendiğim Pozisyonlar"
+      },
+      "description": {
+        "en": "Frontend Developer, UI, Architect",
+        "tr": "Frontend Geliştirici, UI, Mimar"
+      }
+    }
+  ],
+  "about": {
+    "en": [
+      "Combining my design vision with a detailed and solution-oriented project management experience rooted in architecture.",
+      "I bring user-centric digital experiences to life through Frontend Development."
+    ],
+    "tr": [
+      "Mimarlık altyapımdan gelen detaycı ve çözüm odaklı proje yönetimi tecrübemle tasarım vizyonumu teknolojiyle buluşturuyorum.",
+      "Ön Yüz Geliştirme (Frontend) alanında kullanıcı dostu dijital deneyimler tasarlıyorum."
+    ]
+  }
+}

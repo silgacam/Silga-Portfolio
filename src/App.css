@@ -1,0 +1,1415 @@
+
+/* GENEL AYARLAR */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: none;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  min-height: 671px;
+  padding: 25px 16.7%;
+  background: linear-gradient(
+    to right,
+    #4731D3 70%,
+    #CBF281 70%
+  );
+  color: white;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 45px;
+  width: 100%;
+}
+
+.logo {
+  color: #CBF281;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.languageButton {
+  border: none;
+  background: transparent;
+  color: #D9D9D9;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transform: translateX(-100px);
+}
+
+.languageButton .activeLanguage {
+  color: #CAF181;
+}
+
+.themeButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: transparent;
+  color: #4731D3;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transform: translateX(-50px);
+}
+
+.themeSwitch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 43px;
+  height: 19px;
+  padding: 3px;
+  border-radius: 20px;
+  background-color: #9585ff;
+}
+
+.themeSwitch span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ffe45c;
+  transition: transform 0.3s;
+}
+
+.themeSwitch span.dark {
+  transform: translateX(-24px);
+}
+
+/* HERO SECTION */
+
+.silga {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-top: 85px;
+  min-height: 370px;
+  position: relative;
+}
+
+.silgaContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.silgaContent h1 {
+  max-width: 450px;
+  color: #CBF281;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.silgaContent p {
+  max-width: 450px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.silgaImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.silgaImage img {
+  width: 350px;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* SOCIAL LINKS */
+
+.socialLinks {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 127px;
+  height: 52px;
+  border: 2px solid #4731D3;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #3730A3;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.socialLinks a svg {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+}
+
+.socialLinks a:hover {
+  background-color: #CBF281;
+  transform: translateY(-3px);
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  min-height: 180px;
+  padding: 30px 16.7%;
+  background-color: #ffffff;
+}
+
+.skills h2 {
+  color: #4731D3;
+  font-size: 48px;
+  min-width: 90px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.skillsList {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: start;
+  column-gap: 160px;
+  row-gap: 15px;
+  margin-left: 80px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 150px;
+}
+
+.skillLogo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skillLogo img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.skillItem span {
+  color: #777777;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* PROFILE SECTION */
+
+.profile {
+  width: 100%;
+  min-height: 552px;
+  padding: 70px 16.7%;
+  background-color: #4731D3;
+  color: #ffffff;
+}
+
+.profile h2 {
+  color: #CBF281;
+  font-size: 48px;
+  margin-bottom: 22px;
+}
+
+.profileContent {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.basicInformation h3,
+.aboutMe h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.informationItem {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.informationItem span {
+  color: #CBF281;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.informationItem p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profileImage {
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutMe {
+  margin-top: 0;
+  align-self: start;
+}
+
+.aboutMe p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  padding: 50px 16.7%;
+  background-color: #CBF281;
+}
+
+.projects h2 {
+  color: #4731D3;
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.projectCard {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.projectImage {
+  width: 35%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.projectImage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectInfo {
+  flex: 1;
+  min-width: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectInfo h3 {
+  color: #4731D3;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.projectInfo p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.projectTechnologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.projectTechnologies span {
+  background-color: #4731D3;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 22px;
+}
+
+.projectLinks a {
+  color: #1f1646;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.projectLinks a:hover {
+  color: #4731D3;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  width: 100%;
+  min-height: 345px;
+  padding: 65px 20px;
+  background-color: #fafafa;
+  color: #1f1646;
+  text-align: center;
+}
+
+.footer h2 {
+  color: #4731D3;
+  font-size: 48px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.footer p {
+  color: #120b39;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.footer .emailLink {
+  display: inline-block;
+  color: #4731D3;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer .footerLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  margin-top: 0;
+}
+
+.footer .footerLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4731D3;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.footer .footerLinks svg {
+  width: 29px;
+  height: 29px;
+}
+
+.footer .footerLinks a:hover {
+  transform: translateY(-4px);
+}
+
+/* DARK MODE */
+
+.darkMode {
+  background-color: #19172e;
+  color: #ffffff;
+}
+
+.darkMode .header {
+  background: linear-gradient(
+    to right,
+    #171043 70%,
+    #211f0b 70%
+  );
+}
+
+.darkMode .themeButton {
+  color: #d9d9d9;
+}
+
+.darkMode .themeSwitch {
+  background-color: #3a3a3a;
+}
+
+.darkMode .themeSwitch span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #ffe45c;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.darkMode .themeSwitch span::after {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #3a3a3a;
+  top: 1px;
+  left: 3px;
+}
+
+.darkMode .languageButton .activeLanguage {
+  color: #bab2e7;
+}
+
+.darkMode .socialLinks a {
+  border: 2px solid #ffffff;
+  background-color: #252128;
+  color: #ffffff;
+}
+
+.darkMode .socialLinks a:hover {
+  background-color: #8173da;
+}
+
+.darkMode .skills {
+  background-color: #252128;
+}
+
+.darkMode .skills h2 {
+  color: #CBF281;
+}
+
+.darkMode .skillItem span {
+  color: #ffffff;
+}
+
+.darkMode .profile {
+  background-color: #171043;
+}
+
+.darkMode .profile h2,
+.darkMode .informationItem span {
+  color: #CBF281;
+}
+
+.darkMode .projects {
+  background-color: #1a210b;
+}
+
+.darkMode .projects h2 {
+  color: #CBF281;
+}
+
+.darkMode .projectCard {
+  background-color: #2b2727;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.darkMode .projectImage {
+  background-color: #302b4d;
+}
+
+.darkMode .projectInfo h3 {
+  color: #C1baed;
+}
+
+.darkMode .projectInfo p {
+  color: #ffffff;
+}
+
+.darkMode .projectTechnologies span {
+  background-color: #8173da;
+  color: #ffffff;
+}
+
+.darkMode .projectLinks a {
+  color: #cbf281;
+}
+
+.darkMode .projectLinks a:hover {
+  color: #CBF281;
+}
+
+.darkMode .footer {
+  background-color: #252128;
+}
+
+.darkMode .footer h2,
+.darkMode .footer .emailLink,
+.darkMode .footer .footerLinks a {
+  color: #8f88ff;
+}
+
+.darkMode .footer p {
+  color: #ffffff;
+}
+
+/* TABLET: 769px - 1024px */
+/* ============================================================
+   TABLET: 769px - 1024px
+   Ana CSS dosyasından SONRA import edilmelidir.
+   ============================================================ */
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+  .header,
+  .skills,
+  .profile,
+  .projects {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+ 
+  /* HEADER
+     Hero görseli bu aralıkta akışa girdiği için %70/%30 gradient
+     anlamını yitiriyor; düz renk kullanılıyor. */
+ 
+  .header {
+    min-height: auto;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    background: #4731D3;
+  }
+ 
+  .darkMode .header {
+    background: #171043;
+  }
+ 
+  .logo {
+    font-size: 28px;
+  }
+ 
+  .navActions {
+    gap: 24px;
+  }
+ 
+  .languageButton,
+  .themeButton {
+    transform: none;
+    font-size: 14px;
+  }
+ 
+  .themeButton {
+    color: #CBF281;
+  }
+ 
+  .darkMode .themeButton {
+    color: #d9d9d9;
+  }
+ 
+  /* HERO */
+ 
+  .silga {
+    gap: 30px;
+    margin-top: 50px;
+    min-height: auto;
+  }
+ 
+  .silgaContent {
+    flex: 1;
+    min-width: 0;
+  }
+ 
+  .silgaContent h1 {
+    max-width: none;
+    font-size: 42px;
+    margin-bottom: 18px;
+  }
+ 
+  .silgaContent p {
+    max-width: none;
+    font-size: 20px;
+  }
+ 
+  .silgaImage {
+    position: static;
+    flex: 0 0 260px;
+    width: 260px;
+    transform: none;
+    justify-content: center;
+  }
+ 
+  .silgaImage img {
+    width: 260px;
+    height: 290px;
+  }
+ 
+  .socialLinks {
+    flex-wrap: wrap;
+  }
+ 
+  .socialLinks a {
+    width: 127px;
+    height: 48px;
+    font-size: 16px;
+  }
+ 
+  /* SKILLS */
+ 
+  .skills {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+    min-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+ 
+  .skills h2 {
+    font-size: 38px;
+    min-width: 0;
+    margin-top: 0;
+  }
+ 
+  .skillsList {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+    column-gap: 30px;
+    row-gap: 22px;
+  }
+ 
+  .skillItem {
+    min-width: 0;
+    gap: 18px;
+  }
+ 
+  .skillLogo {
+    width: 90px;
+    height: 90px;
+  }
+ 
+  .skillLogo img {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .skillItem span {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+ 
+  /* PROFILE
+     Üst satır: fotoğraf + temel bilgiler, alt satır: hakkımda */
+ 
+  .profile {
+    min-height: auto;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+ 
+  .profile h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+ 
+  .profileContent {
+    grid-template-columns: 240px minmax(0, 1fr);
+    grid-template-areas:
+      "image basic"
+      "about about";
+    justify-content: stretch;
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+ 
+  .profileImage {
+    grid-area: image;
+    justify-content: flex-start;
+  }
+ 
+  .basicInformation {
+    grid-area: basic;
+  }
+ 
+  .aboutMe {
+    grid-area: about;
+  }
+ 
+  .profileImage img {
+    width: 240px;
+    height: 240px;
+  }
+ 
+  .basicInformation h3,
+  .aboutMe h3 {
+    font-size: 26px;
+  }
+ 
+  .informationItem {
+    grid-template-columns: 120px 1fr;
+  }
+ 
+  .informationItem span {
+    font-size: 17px;
+  }
+ 
+  .informationItem p {
+    font-size: 16px;
+  }
+ 
+  .aboutMe p {
+    font-size: 17px;
+  }
+ 
+  /* PROJECTS */
+ 
+  .projects {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+ 
+  .projects h2 {
+    font-size: 38px;
+  }
+ 
+  .projectCard {
+    height: auto;
+    min-height: 280px;
+  }
+ 
+  .projectImage {
+    width: 38%;
+  }
+ 
+  .projectInfo {
+    padding: 24px;
+  }
+ 
+  .projectInfo h3 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+ 
+  .projectInfo p {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+ 
+  .projectTechnologies span {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+ 
+  /* FOOTER */
+ 
+  .footer {
+    min-height: auto;
+    padding: 55px 6%;
+  }
+ 
+  .footer h2 {
+    font-size: 38px;
+  }
+ 
+  .footer p {
+    font-size: 21px;
+  }
+ 
+  .footer .emailLink {
+    font-size: 18px;
+  }
+}
+ 
+/* TEMEL MOBİL DÜZEN (tek sütun) */
+ 
+@media (max-width: 768px) {
+ 
+  /* HEADER */
+ 
+  .header {
+    min-height: auto;
+    padding: 20px 6% 40px;
+    background: #4731D3;
+  }
+ 
+  .darkMode .header {
+    background: #171043;
+  }
+ 
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+ 
+  .logo {
+    font-size: 24px;
+  }
+ 
+  .navActions {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+  }
+ 
+  .languageButton,
+  .themeButton {
+    transform: none;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+ 
+  
+  .themeButton {
+    color: #bab2e7;
+  }
+ 
+  .darkMode .themeButton {
+    color: #d9d9d9;
+  }
+ 
+  .themeSwitch {
+    flex-shrink: 0;
+  }
+ 
+  /* HERO */
+ 
+  .silga {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25px;
+    margin-top: 30px;
+    min-height: auto;
+  }
+ 
+  .silgaContent {
+    width: 100%;
+  }
+ 
+  .silgaContent h1 {
+    max-width: none;
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+ 
+  .silgaContent p {
+    max-width: none;
+    font-size: 16px;
+  }
+ 
+  .silgaImage {
+    position: static;
+    transform: none;
+    width: 100%;
+    flex: none;
+    justify-content: center;
+  }
+ 
+  .silgaImage img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    aspect-ratio: 210 / 225;
+  }
+ 
+  .socialLinks {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+ 
+  .socialLinks a {
+    flex: 1 1 100px;
+    width: auto;
+    min-width: 0;
+    height: 46px;
+    padding: 8px 10px;
+    font-size: 13px;
+    gap: 6px;
+  }
+ 
+  .socialLinks a svg {
+    width: 20px;
+    height: 20px;
+  }
+ 
+  /* SKILLS */
+ 
+  .skills {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    min-height: auto;
+    padding: 35px 6%;
+  }
+ 
+  .skills h2 {
+    font-size: 26px;
+    min-width: 0;
+    margin-top: 0;
+  }
+ 
+  .skillsList {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+    gap: 18px 12px;
+  }
+ 
+  .skillItem {
+    min-width: 0;
+    gap: 10px;
+  }
+ 
+  .skillLogo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+ 
+  .skillLogo img {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .skillItem span {
+    font-size: 13px;
+    overflow-wrap: anywhere;
+  }
+ 
+  /* PROFILE */
+ 
+  .profile {
+    min-height: auto;
+    padding: 35px 6%;
+  }
+ 
+  .profile h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+ 
+  .profileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+  }
+ 
+  .profileImage {
+    order: 1;
+    justify-content: center;
+  }
+ 
+  .basicInformation {
+    order: 2;
+  }
+ 
+  .aboutMe {
+    order: 3;
+  }
+ 
+  .profileImage img {
+    width: 180px;
+    height: 180px;
+  }
+ 
+  .basicInformation h3,
+  .aboutMe h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+ 
+  .informationItem {
+    grid-template-columns: 95px 1fr;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+ 
+  .informationItem span {
+    font-size: 13px;
+  }
+ 
+  .informationItem p {
+    font-size: 14px;
+  }
+ 
+  .aboutMe p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+ 
+  /* PROJECTS */
+ 
+  .projects {
+    padding: 35px 6%;
+  }
+ 
+  .projects h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+ 
+  .projectsList {
+    gap: 22px;
+  }
+ 
+  .projectCard {
+    flex-direction: column;
+    height: auto;
+  }
+ 
+  .projectImage {
+    width: 100%;
+    height: 190px;
+  }
+ 
+  .projectInfo {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+ 
+  .projectInfo h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+ 
+  .projectInfo p {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+ 
+  .projectTechnologies {
+    gap: 7px;
+    margin-bottom: 14px;
+  }
+ 
+  .projectTechnologies span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+ 
+  .projectLinks {
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+ 
+  .projectLinks a {
+    font-size: 14px;
+  }
+ 
+  /* FOOTER */
+ 
+  .footer {
+    min-height: auto;
+    padding: 45px 6%;
+  }
+ 
+  .footer h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+ 
+  .footer p {
+    font-size: 16px;
+  }
+ 
+  .footer .emailLink {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+  }
+ 
+  .footer .footerLinks {
+    gap: 20px;
+  }
+ 
+  .footer .footerLinks svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+ 
+/* GENİŞ TELEFON / KÜÇÜK TABLET (dikey): 501px - 768px */
+ 
+@media (min-width: 501px) and (max-width: 768px) {
+ 
+  .header {
+    padding: 25px 6% 50px;
+  }
+ 
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+  .navActions {
+    width: auto;
+    gap: 22px;
+  }
+ 
+  .logo {
+    font-size: 28px;
+  }
+ 
+  .languageButton,
+  .themeButton {
+    font-size: 13px;
+  }
+ 
+  /* HERO */
+ 
+  .silga {
+    margin-top: 40px;
+    gap: 30px;
+  }
+ 
+  .silgaContent h1 {
+    font-size: 44px;
+  }
+ 
+  .silgaContent p {
+    font-size: 19px;
+  }
+ 
+  .silgaImage img {
+    max-width: 300px;
+  }
+ 
+  .socialLinks a {
+    flex: 0 0 127px;
+    height: 48px;
+    font-size: 15px;
+  }
+ 
+  /* SKILLS */
+ 
+  .skills {
+    padding: 40px 6%;
+  }
+ 
+  .skills h2 {
+    font-size: 32px;
+  }
+ 
+  .skillsList {
+    column-gap: 24px;
+    row-gap: 22px;
+  }
+ 
+  .skillItem {
+    gap: 16px;
+  }
+ 
+  .skillLogo {
+    width: 72px;
+    height: 72px;
+  }
+ 
+  .skillItem span {
+    font-size: 17px;
+  }
+ 
+  /* PROFILE: fotoğraf + bilgiler yan yana, hakkımda altta */
+ 
+  .profile {
+    padding: 45px 6%;
+  }
+ 
+  .profile h2 {
+    font-size: 32px;
+  }
+ 
+  .profileContent {
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-areas:
+      "image basic"
+      "about about";
+    column-gap: 30px;
+    row-gap: 28px;
+  }
+ 
+  .profileImage {
+    grid-area: image;
+    justify-content: flex-start;
+  }
+ 
+  .basicInformation {
+    grid-area: basic;
+  }
+ 
+  .aboutMe {
+    grid-area: about;
+  }
+ 
+  .profileImage img {
+    width: 200px;
+    height: 200px;
+  }
+ 
+  .basicInformation h3,
+  .aboutMe h3 {
+    font-size: 22px;
+  }
+ 
+  .informationItem {
+    grid-template-columns: 100px 1fr;
+  }
+ 
+  .informationItem span {
+    font-size: 15px;
+  }
+ 
+  .informationItem p {
+    font-size: 15px;
+  }
+ 
+  .aboutMe p {
+    font-size: 16px;
+  }
+ 
+  /* PROJECTS */
+ 
+  .projects {
+    padding: 40px 6%;
+  }
+ 
+  .projects h2 {
+    font-size: 32px;
+  }
+ 
+  .projectImage {
+    height: 260px;
+  }
+ 
+  .projectInfo {
+    padding: 24px;
+  }
+ 
+  .projectInfo h3 {
+    font-size: 24px;
+  }
+ 
+  .projectInfo p {
+    font-size: 15px;
+  }
+ 
+  .projectTechnologies span {
+    font-size: 12px;
+  }
+ 
+  .projectLinks a {
+    font-size: 15px;
+  }
+ 
+  /* FOOTER */
+ 
+  .footer {
+    padding: 50px 6%;
+  }
+ 
+  .footer h2 {
+    font-size: 34px;
+  }
+ 
+  .footer p {
+    font-size: 19px;
+  }
+ 
+  .footer .emailLink {
+    font-size: 17px;
+  }
+}
+ 
+/* ÇOK KÜÇÜK TELEFONLAR: 360px VE ALTI */
+ 
+@media (max-width: 360px) {
+ 
+  .silgaContent h1 {
+    font-size: 30px;
+  }
+ 
+  .skillItem span {
+    font-size: 12px;
+  }
+ 
+  .informationItem {
+    grid-template-columns: 85px 1fr;
+  }
+}

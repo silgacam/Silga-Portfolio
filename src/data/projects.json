@@ -1,0 +1,27 @@
+
+[
+  {
+    "id": 1,
+    "name": "Teknolojik Yemekler",
+    "description": {
+      "en": "A pizza ordering application built with React. Users can customize their pizza, select ingredients and submit orders through an interactive form.",
+      "tr": "React ile geliştirilmiş bir pizza sipariş uygulaması. Kullanıcılar pizzalarını özelleştirebilir, malzemelerini seçebilir ve interaktif bir form aracılığıyla sipariş verebilir."
+    },
+    "technologies": ["React", "JavaScript", "CSS", "Axios", "React Router"],
+    "github": "https://github.com/silgacam/fsweb-s8-challenge-pizza",
+    "image": "/public/pizza.png"
+  },
+
+  {
+  "id": 2,
+  "name": "Workintech",
+  "description": {
+    "en": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+    "tr": "Kullanıcılarınızın hangi çerezleri kabul edip hangilerini reddedeceklerini seçmelerine olanak tanıyan; basit, özelleştirilebilir ve kurulumu minimal bir çerez eklentisi. Saf JavaScript (vanilla JS), SCSS ve Parcel Bundler kullanılarak oluşturulmuş olup NPM paketi olarak sunulmaktadır; ayrıca Git deposu üzerinden kod ve temalar üzerinde dilediğiniz gibi özelleştirme yapmanız mümkündür."
+  },
+  "technologies": ["React", "Redux", "Vercel"],
+  "github": "",
+  "demo": "https://www.workintech.com",
+  "image": "/public/wtech.png"
+}
+]
