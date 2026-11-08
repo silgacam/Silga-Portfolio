@@ -211,7 +211,7 @@ a {
 .skills {
   display: flex;
   align-items: flex-start;
-  gap: 60px;
+  gap: 70px;
   min-height: 180px;
   padding: 30px 16.7%;
   background-color: #ffffff;
@@ -223,6 +223,11 @@ a {
   min-width: 90px;
   font-weight: bold;
   margin-top: 4px;
+}
+
+.skills h2.turkishTitle {
+  font-size: 45px;
+  white-space: nowrap;
 }
 
 .skillsList {
@@ -239,7 +244,7 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 150px;
+  min-width: 120px;
 }
 
 .skillLogo {
@@ -891,6 +896,10 @@ a {
   .footer .emailLink {
     font-size: 18px;
   }
+
+   .skills h2.turkishTitle {
+    font-size: 38px;
+  }
 }
  
 /* TEMEL MOBİL DÜZEN (tek sütun) */
@@ -1207,5 +1216,9 @@ a {
     width: 24px;
     height: 24px;
   }
+.skills h2.turkishTitle {
+    font-size: 26px;
+  }
 }
+ 
  

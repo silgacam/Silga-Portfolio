@@ -24,7 +24,9 @@ function Skills() {
 
   return (
     <section className="skills" id="skills">
-      <h2>{language === 'tr' ? 'Yetenekler' : 'Skills'}</h2>
+      <h2 className={language === 'tr' ? 'turkishTitle' : ''}>
+  {language === 'tr' ? 'Yetenekler' : 'Skills'}
+</h2>
 
       <div className="skillsList">
         {skillsData.map((skill) => (

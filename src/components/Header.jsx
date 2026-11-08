@@ -42,7 +42,7 @@ function Header() {
         <div className="silgaContent">
           <h1>
             {isTurkish ? (
-              <>Ben bir Frontend<br />Developer'ım...</>
+              <>Ben bir Ön Yüz<br />Geliştirici'yim...</>
             ) : (
               <>I am a Frontend<br />Developer...</>
             )}
