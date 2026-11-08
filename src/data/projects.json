@@ -9,7 +9,7 @@
     },
     "technologies": ["React", "JavaScript", "CSS", "Axios", "React Router"],
     "github": "https://github.com/silgacam/fsweb-s8-challenge-pizza",
-    "image": "/public/pizza.png"
+    "image": "/pizza.png"
   },
 
   {
@@ -22,6 +22,6 @@
   "technologies": ["React", "Redux", "Vercel"],
   "github": "",
   "demo": "https://www.workintech.com",
-  "image": "/public/wtech.png"
+  "image": "/wtech.png"
 }
 ]
