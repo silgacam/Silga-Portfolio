@@ -59,9 +59,11 @@ a {
 .navActions {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 50px;
   flex-shrink: 0;
-  position: relative;
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
@@ -73,7 +75,7 @@ a {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  transform: translateX(-100px);
+  transform: none;
 }
 
 .languageButton .activeLanguage {
@@ -91,7 +93,7 @@ a {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  transform: translateX(-50px);
+  transform: none;
 }
 
 .themeSwitch {
@@ -627,7 +629,7 @@ a {
 /* TABLET: 769px - 1024px */
 
  
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024.5px) {
  
   .header,
   .skills,
@@ -889,7 +891,7 @@ a {
  
 /* TEMEL MOBİL DÜZEN (tek sütun) */
  
-@media (max-width: 768px) {
+@media (max-width: 768.5px) {
  
   /* HEADER */
  
